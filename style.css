@@ -1,0 +1,35 @@
+body {
+    padding: 50px;
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+#titulo{ font-family: 'Open Sans Condensed', sans-serif; font-size: 48px; color: #333; text-align: center;}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+
+#mapContainer{
+    border:5px groove #000;
+    width: 100%;
+    height: 500px;
+}
+#rstBtn{
+    margin: 15px;
+    
+    border-bottom: 5px groove solid black;
+}
+#drawDistrict{
+    margin: 15px;
+    border-bottom: 5px groove solid black;
+}
+#seeHouses{
+    margin: 15px;
+    border-bottom: 5px groove solid black;
+}
+#searchHouse{
+    margin: 15px;
+    border-bottom: 5px groove solid black;
+}
+

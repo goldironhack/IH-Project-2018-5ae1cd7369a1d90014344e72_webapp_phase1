@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Housing NYC</title>
+    <!--CLAVE AIzaSyAr7IlHMvg9Zw1JZ8zLIg0QEqQaNacGio4-->
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class = "container">
+        <h2 id="titulo" class= "col-md-12">Searching for a place to live?</h2>
+        <div class = "container-fluid">
+            <div id = "mapContainer"></div>
+        </div>
+        <div style="text-align:center;">
+            <button type="button" id="rstBtn" class="btn btn-dark">Reset Map</button>
+            <button type="button" id="drawDistrict" class="btn btn-dark">Draw districts</button>
+            <button type="button" id="seeHouses" class="btn btn-dark">Show houses</button>
+            
+        </div>
+        <div style= "container-fluid">
+            <a> Please select an option to see available houses according to the borough:</a>
+            <select id = "opciones">
+                <option value ="manhattan">Manhattan</option>
+                <option value ="brooklyn">Brooklyn</option>
+                <option value ="queens">Queens</option>
+                <option value ="bronx">Bronx</option>
+                <option value = "statenisland">Staten Island</option>
+            </select>
+            <button type="button" id="searchHouse" class="btn btn-dark">Search</button>
+        </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr7IlHMvg9Zw1JZ8zLIg0QEqQaNacGio4&callback=initMap">
+    </script>
+</body>
+</html>
